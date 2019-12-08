@@ -20,4 +20,5 @@ Then include it to your script like this:
 
 ## Files
 
-1. [colours.sh](colours.sh) - contains a set of variables to colorize bash output
+1. [colours.sh](colours.sh) - a set of variables to colorize bash output
+1. [output_utils.sh](output_utils.sh) - utilities to format and output stuff to the user in the shell
