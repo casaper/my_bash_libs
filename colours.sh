@@ -51,6 +51,6 @@ BG_WHITE='\033[107m'
 #
 function c_echo() {
   for string in "$@"; do
-    echo -e "$string"
+    echo -e "$string${F_RESET}"
   done
 }
