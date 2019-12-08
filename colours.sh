@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
+# alias echo to always have -e, so it displays colours by default
+alias echo='echo -e'
+
 # Reset any of the following formats, close string with C_SET
-UNFORMAT='\033[0m'
+F_RESET='\033[0m'
+F_BOLD='\033[1m'
 
 # output colours
 C_DEFAULT='\033[39m'
@@ -40,6 +44,3 @@ BG_LIGHT_BLUE='\033[104m'
 BG_LIGHT_MAGENTA='\033[105m'
 BG_LIGHT_CYAN='\033[106m'
 BG_WHITE='\033[107m'
-
-# alias echo to always have -e, so it displays colours by default
-alias echo='echo -e'
