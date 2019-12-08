@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -a # export all defined variables
 
 # Reset any of the following formats, close string with C_SET
 F_RESET='\033[0m'
