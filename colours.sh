@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Since bash doesn't have dependency management, show origin:
+# File Origin: https://github.com/casaper/my_bash_libs/blob/master/colours.sh
+
 set -a # export all defined variables
 
 # Reset any of the following formats, close string with C_SET
