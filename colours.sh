@@ -41,3 +41,11 @@ BG_LIGHT_BLUE='\033[104m'
 BG_LIGHT_MAGENTA='\033[105m'
 BG_LIGHT_CYAN='\033[106m'
 BG_WHITE='\033[107m'
+
+## outputs all of its parameters with `echo -e`
+#
+function c_echo() {
+  for string in "$@"; do
+    echo -e "$string"
+  done
+}
