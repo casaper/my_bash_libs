@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# alias echo to always have -e, so it displays colours by default
-alias echo='echo -e'
-
 # Reset any of the following formats, close string with C_SET
 F_RESET='\033[0m'
 F_BOLD='\033[1m'
