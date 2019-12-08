@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Since bash doesn't have dependency management, show origin:
 # File Origin: https://github.com/casaper/my_bash_libs/blob/master/output_utils.sh
+# This is not a copyright notice. Its just for practical reasons.
 
 ## repeat a char to output a line
 #
