@@ -3,6 +3,11 @@
 # File Origin: https://github.com/casaper/my_bash_libs/blob/master/output_utils.sh
 # This is not a copyright notice. Its just for practical reasons.
 
+if [ -z "$F_RESET" ]; then
+  SCRIPTPATH=$(dirname $(realpath $0))
+  echo "$SCRIPTPATH"
+fi
+
 ## repeat a char to output a line
 #
 # examples:
@@ -29,4 +34,18 @@ function indent_left() {
   INDENT_WIDTH=$2
   SPACES=$(("$INDENT_WIDTH" - "$BEFORE_WIDTH"))
   echo -e "$(printf "%s%${SPACES}s" "$1" "$3")"
+}
+
+function display_help_option() {
+  OPTION="$1"
+  INDENT=$2
+  TEXT=$3
+  EXAMPLE_VALUE=$4
+  if [ -n "$EXAMPLE_VALUE" ]; then
+    indent_left "${C_YELLOW}${OPTION}${F_RESET}=${EXAMPLE_VALUE}" \
+      "$INDENT" \
+      "$TEXT"
+  else
+    indent_left "${C_YELLOW}${OPTION}${F_RESET}" "$INDENT" "$TEXT"
+  fi
 }
