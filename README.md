@@ -2,6 +2,8 @@
 - [My Bash Libs](#my-bash-libs)
   - [Include in your script](#include-in-your-script)
   - [Files](#files)
+  - [Linux Scripts](#linux-scripts)
+  - [setup_chrooted_ssh_home.sh](#setupchrootedsshhomesh)
 
 # My Bash Libs
 
@@ -22,3 +24,12 @@ Then include it to your script like this:
 
 1. [colours.sh](colours.sh) - a set of variables to colorize bash output
 1. [output_utils.sh](output_utils.sh) - utilities to format and output stuff to the user in the shell
+
+## Linux Scripts
+
+## [setup_chrooted_ssh_home.sh](setup_chrooted_ssh_home.sh)
+
+Creates a user with a ssh only access chroot chail, that has one or more directories from the system bound `mount --bind` into its chroot chail.
+This has worked on Debian-ish machines (debian, raspbian). Never tested this on any other distro, and I definitly do not take any responsibility for you using this.
+
+Unless you know what your doing and understand what this script does (by reading it) **you shouldn't use it**!
