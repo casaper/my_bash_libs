@@ -3,9 +3,9 @@
 # File Origin: https://github.com/casaper/my_bash_libs/blob/master/output_utils.sh
 # This is not a copyright notice. Its just for practical reasons.
 
+# Source the colours lib when not exits
 if [ -z "$F_RESET" ]; then
-  SCRIPTPATH=$(dirname $(realpath $0))
-  echo "$SCRIPTPATH"
+  . "$(dirname "$BASH_SOURCE")/colours.sh"
 fi
 
 ## repeat a char to output a line
