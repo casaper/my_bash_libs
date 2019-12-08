@@ -30,10 +30,7 @@ function num_of_chars() {
 #
 # indendt_left 'first text' 30 'Aligned to 30 minus first text length'
 function indent_left() {
-  BEFORE_WIDTH=$(num_of_chars "$1")
-  INDENT_WIDTH=$2
-  SPACES=$(("$INDENT_WIDTH" - "$BEFORE_WIDTH"))
-  echo -e "$(printf "%s%${SPACES}s" "$1" "$3")"
+  echo -e "$(printf "%-${2}s" "$1")${3}"
 }
 
 function display_help_option() {
